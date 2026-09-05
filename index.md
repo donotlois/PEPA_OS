@@ -1,6 +1,7 @@
 --- 
 title: "Smart Irrigation Systems — PEPA OS Manual" 
-description: "Documentation technique du système d'irrigation intelligent basé sur PEPA OS." author: "DONOT Loïs" version: "Pre-release V.0.1 " 
+description: "Documentation technique du système d'irrigation intelligent basé sur PEPA OS." author: "DONOT Loïs"
+version: "Pre-release V.0.1 " 
 ---
 
 # Smart Irrigation Systems : PEPA OS Manual 
