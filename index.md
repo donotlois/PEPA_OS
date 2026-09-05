@@ -114,5 +114,3 @@ embedded applications.
 ## Basic Concepts
 
 ### Architecture
-
-...
