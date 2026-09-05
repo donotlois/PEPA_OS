@@ -4,7 +4,8 @@ description: "Technical documentation for the smart irrigation system based on P
 author: "DONOT Lois"
 version: "Pre-release V.0.1"
 
-language: "fr"
+language: "en"
+
 translation:
   enabled: true
   source: "en"
@@ -125,4 +126,4 @@ embedded applications.
 ### Architecture
 
 
-V2
+V3
