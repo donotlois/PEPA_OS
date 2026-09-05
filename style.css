@@ -1,31 +1,13 @@
-/* Mise en page générale */
 body {
     font-family: Inter, Arial, sans-serif;
     line-height: 1.7;
 }
 
-/* Paragraphes justifiés */
 p {
     text-align: justify;
 }
 
-/* Images */
-figure {
-    text-align: center;
-    margin: 2rem auto;
-}
-
-figure img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 16px;
-}
-
-/* Titres */
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    margin-top: 3rem;
+main {
+    max-width: 900px;
+    margin: auto;
 }
