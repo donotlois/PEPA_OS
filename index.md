@@ -30,89 +30,326 @@ responsive: true
 
 <style>
 
+/* =========================================================
+   BASE
+   ========================================================= */
+
+:root {
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface-soft: #f1f5f9;
+    --text: #172033;
+    --text-muted: #64748b;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --border: #e2e8f0;
+    --code-bg: #0f172a;
+    --code-text: #e2e8f0;
+}
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
 body {
+    margin: 0;
     font-family: Inter, Arial, sans-serif;
     line-height: 1.7;
-    background: #f8fafc;
-    color: #172033;
+    background: var(--bg);
+    color: var(--text);
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
 }
+
+/* =========================================================
+   TEXT
+   ========================================================= */
 
 p {
     text-align: justify;
+    text-justify: inter-word;
     line-height: 1.8;
+    color: var(--text);
 }
+
+strong,
+b {
+    font-weight: 700;
+}
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
 
 h1 {
     font-size: 3rem;
     font-weight: 800;
+    line-height: 1.2;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
+    font-size: 2rem;
+    font-weight: 700;
     margin-top: 3rem;
+    margin-bottom: 1.2rem;
     padding-bottom: 0.6rem;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid var(--border);
 }
 
 h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-top: 2rem;
 }
 
-img {
-    display: block;
-    max-width: 800px;
-    width: 100%;
-    margin: 2rem auto;
-    border-radius: 16px;
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
 }
 
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+img {
+    display: block;
+    width: auto;
+    max-width: 700px;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 16px;
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Logo */
+
+img.logo {
+    max-width: 300px;
+}
+
+/* =========================================================
+   FIGURES
+   ========================================================= */
+
 figure {
+    margin: 3rem auto;
     text-align: center;
 }
 
 figcaption {
-    color: #64748b;
+    margin-top: 12px;
+    color: var(--text-muted);
     font-size: 0.9rem;
     font-style: italic;
 }
 
+/* =========================================================
+   BLOCKQUOTES
+   ========================================================= */
+
+blockquote {
+    margin: 2rem 0;
+    padding: 15px 20px;
+    border-left: 4px solid var(--primary);
+    background: var(--surface-soft);
+    border-radius: 0 10px 10px 0;
+    color: var(--text);
+}
+
+/* =========================================================
+   CODE
+   ========================================================= */
+
+code {
+    font-family:
+        "Fira Code",
+        "Cascadia Code",
+        Consolas,
+        monospace;
+
+    background: var(--surface-soft);
+    color: var(--text);
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+}
+
 pre {
-    background: #0f172a;
-    color: #e2e8f0;
+    background: var(--code-bg);
+    color: var(--code-text);
     padding: 20px;
     border-radius: 12px;
     overflow-x: auto;
+    line-height: 1.6;
 }
 
-blockquote {
-    padding: 15px 20px;
-    border-left: 4px solid #2563eb;
-    background: #f1f5f9;
-    border-radius: 0 10px 10px 0;
+pre code {
+    background: transparent;
+    color: var(--code-text);
+    padding: 0;
 }
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+th,
+td {
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+th {
+    background: var(--surface-soft);
+    font-weight: 700;
+}
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+ul,
+ol {
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+/* =========================================================
+   HORIZONTAL RULE
+   ========================================================= */
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0;
+}
+
+/* =========================================================
+   DARK MODE
+   S'adapte automatiquement au mode sombre du PC/navigateur
+   ========================================================= */
 
 @media (prefers-color-scheme: dark) {
+
+    :root {
+        --bg: #0b1120;
+        --surface: #111827;
+        --surface-soft: #1e293b;
+        --text: #e5e7eb;
+        --text-muted: #94a3b8;
+        --primary: #60a5fa;
+        --primary-hover: #93c5fd;
+        --border: #263244;
+        --code-bg: #020617;
+        --code-text: #e2e8f0;
+    }
+
     body {
-        background: #0b1120;
-        color: #e5e7eb;
+        background: var(--bg);
+        color: var(--text);
     }
 
     h2 {
-        border-color: #263244;
+        border-color: var(--border);
     }
 
     blockquote {
-        background: #1e293b;
+        background: var(--surface-soft);
+    }
+
+    figcaption {
+        color: var(--text-muted);
+    }
+
+    th {
+        background: var(--surface-soft);
     }
 }
 
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 700px) {
+
+    body {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
     p {
         text-align: left;
     }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img.logo {
+        max-width: 300px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    pre {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+    background: var(--primary);
+    color: white;
 }
 
 </style>
-
 
 # Smart Irrigation Systems — PEPA OS Manual
 
