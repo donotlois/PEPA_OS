@@ -12,7 +12,7 @@ translation:
 
 css: "./style.css"
 
-theme: "windows"
+theme: "minimal"
 layout: "documentation"
 width: "wide"
 
