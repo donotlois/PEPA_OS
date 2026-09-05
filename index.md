@@ -321,7 +321,7 @@ hr {
     }
 
     img {
-        max-width: 100%;
+        max-width: 60%;
         height: auto;
     }
 
