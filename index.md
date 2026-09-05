@@ -23,7 +23,7 @@ toc_position: "right"
 toc_sticky: true
 toc_depth: 3
 
-dark_mode: true
+dark_mode: false
 smooth_scroll: true
 responsive: true
 ---
