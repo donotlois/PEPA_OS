@@ -341,6 +341,32 @@ figcaption {
 
     font-style: italic;
 }
+/* =========================================================
+   FIGURES
+   ========================================================= */
+
+figure {
+    width: 60%;
+    max-width: 700px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+    display: block;
+}
+
+figcaption {
+    margin-top: 12px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+}
 
 /* =========================================================
    LISTS
