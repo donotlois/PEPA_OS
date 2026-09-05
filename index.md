@@ -7,8 +7,8 @@ version: "Pre-release V.0.1"
 language: "fr"
 translation:
   enabled: true
-  source: "fr"
-  target: "en"
+  source: "en"
+  target: "fr"
   automatic: true
 
 css: "./style.css"
