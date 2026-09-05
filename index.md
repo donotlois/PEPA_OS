@@ -123,3 +123,5 @@ embedded applications.
 ## Basic Concepts
 
 ### Architecture
+
+Ici je parle en francais
