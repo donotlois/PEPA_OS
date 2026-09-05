@@ -71,6 +71,10 @@ main {
     font-size: 0.9rem;
 }
 
+.toc-subitem {
+    padding-left: 14px;
+}
+
 .toc a:hover {
     color: var(--primary);
 }
