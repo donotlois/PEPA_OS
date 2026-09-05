@@ -1,8 +1,7 @@
+# Mon titre
 
-<div style="position: fixed; right: 20px; top: 20px; width: 220px;">
+<p style="color: red;">Texte en rouge</p>
 
-### Sommaire
-
-- [Basic notions](#basic-notions)
-
-</div> 
+<div>
+  <strong>Texte HTML</strong>
+</div>
