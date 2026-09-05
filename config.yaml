@@ -29,7 +29,7 @@ typography:
   text_align: "justify"
 
 appearance:
-  dark_mode: true
+  dark_mode: false
   smooth_scroll: true
   responsive: true
 
