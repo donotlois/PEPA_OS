@@ -1,0 +1,42 @@
+title: "Smart Irrigation Systems - PEPA OS Manual"
+description: "Technical documentation for the smart irrigation system based on PEPA OS."
+author: "DONOT Lois"
+version: "Pre-release V.0.1"
+language: "en"
+
+translation:
+  enabled: true
+  source: "en"
+  target: "fr"
+  automatic: true
+
+css: "./style.css"
+
+theme: "modern"
+layout: "documentation"
+width: "wide"
+
+toc:
+  enabled: true
+  position: "right"
+  sticky: true
+  depth: 3
+
+typography:
+  font: "Inter"
+  font_size: "16px"
+  line_height: "1.7"
+  text_align: "justify"
+
+appearance:
+  dark_mode: false
+  smooth_scroll: true
+  responsive: true
+
+images:
+  alignment: "center"
+  max_width: "800px"
+
+code:
+  syntax_highlighting: true
+  line_numbers: true
