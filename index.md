@@ -57,3 +57,23 @@ PEPA OS is a lightweight operating system designed specifically for embedded app
 #### Test 
 
 ### 
+
+...
+
+<style>
+.markdown-body p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.markdown-body {
+    max-width: 900px;
+}
+
+.toc {
+    position: fixed;
+    right: 30px;
+    top: 120px;
+    width: 250px;
+}
+</style>
