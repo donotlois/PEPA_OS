@@ -124,4 +124,5 @@ embedded applications.
 
 ### Architecture
 
-Ici je parle en francais
+
+V2
